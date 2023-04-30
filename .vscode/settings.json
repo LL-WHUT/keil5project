@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "ling.h": "c",
+        "regx52.h": "c",
+        "REGX52.H": "cpp",
+        "reg52.h": "c"
+    }
+}

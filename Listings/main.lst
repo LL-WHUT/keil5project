@@ -1,0 +1,45 @@
+C51 COMPILER V9.60.7.0   MAIN                                                              04/22/2023 19:06:14 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: D:\Program Files (x86)\keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND P
+                    -RINT(.\Listings\main.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+*** WARNING C500 IN LINE 1 OF main.c: SERIAL NUMBER EXPIRED
+   1          #include <ling.h>
+   2          
+   3          u8 smg[10] = {'6', '6', '#'};
+   4          u8 key = 0;
+   5          int xs = 7;
+   6          
+   7          
+   8          void main()
+   9          {
+  10   1          while (1)
+  11   1          {
+  12   2              Smg_display(smg, xs);
+  13   2              while (keyscan())
+  14   2              {
+  15   3                  key = keyscan();
+  16   3                  smg[0] = '0' + key / 10;
+  17   3                  smg[1] = '0' + key % 10;
+  18   3              }
+  19   2          }
+  20   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    785    ----
+   CONSTANT SIZE    =     34    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     13      50
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
