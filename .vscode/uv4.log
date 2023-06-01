@@ -1,11 +1,18 @@
 Build target 'Target 1'
 compiling main.c...
 main.c(1): warning C500: SERIAL NUMBER EXPIRED
+main.c(133): warning C280: 't': unreferenced local variable
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_GLED_DISPLAY?MAIN
 
-Program Size: data=71.0 xdata=0 code=1396
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?KEYSCAN?MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY10US?MAIN
+
+Program Size: data=83.0 xdata=0 code=1593
 creating hex file from ".\Objects\LED"...
-".\Objects\LED" - 0 Error(s), 2 Warning(s).
+".\Objects\LED" - 0 Error(s), 5 Warning(s).
 Build Time Elapsed:  00:00:00

@@ -9,7 +9,7 @@ typedef unsigned int u16;
 void delayxms(u16 xms)
 {
     int i, j;
-    for (i = 0; i < 110; ++i)
+    for (i = 0; i < 114; ++i)
     {
         for (j = 0; j < xms; ++j)
         {
@@ -218,7 +218,7 @@ void Smg_display(u8 *input, int xms)
     }
 }
 
-u8 keyscan(void)
+u8 keyscan(void)//矩阵键盘扫描函数，返回按键的位置(1--16)
 {
     u8 key_value = 0;
     P1 = 0x0F;
